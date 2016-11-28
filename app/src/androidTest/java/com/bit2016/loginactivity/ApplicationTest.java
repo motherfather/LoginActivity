@@ -1,4 +1,4 @@
-package com.estsoft.loginactivity;
+package com.bit2016.loginactivity;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
