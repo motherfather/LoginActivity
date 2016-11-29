@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,19 +8,19 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:stackFromBottom="true"
-        android:src="@drawable/hmo_nc_logo"/>
+        android:src="@drawable/hmo_nc_logo"
+        android:stackFromBottom="true" />
 
     <RelativeLayout
         android:id="@+id/layoutLoginForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_below="@+id/imageViewLogo"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -33,6 +32,8 @@
             android:background="@drawable/bg_edittext_login"
             android:hint="@string/login_email_hint"
             android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textColorHint="#9000"
             android:textSize="14sp" />
 
         <EditText
@@ -40,9 +41,9 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_below="@+id/editTextEmail"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_edittext_login"
             android:hint="@string/login_password_hint"
             android:inputType="textPassword"
@@ -53,9 +54,9 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_below="@+id/editTextPassword"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/bg_btn_login"
             android:text="@string/btn_text_login"
             android:textColor="#ffffff"
@@ -66,14 +67,14 @@
             android:id="@+id/tv_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:layout_below="@+id/buttonLogin"
             android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
             android:padding="5dp"
             android:text="Hello My Office 가입"
             android:textColor="#FFFFFF"
             android:textColorLink="#FFFFFF"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
 
     </RelativeLayout>
 
